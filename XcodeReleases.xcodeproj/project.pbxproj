@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		89FAEF2923055E9D0098DCA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89FAEF2823055E9D0098DCA9 /* Assets.xcassets */; };
 		89FAEF2C23055E9D0098DCA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89FAEF2B23055E9D0098DCA9 /* Preview Assets.xcassets */; };
 		89FAEF2F23055E9D0098DCA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89FAEF2D23055E9D0098DCA9 /* LaunchScreen.storyboard */; };
+		89FAEF37230560A40098DCA9 /* XcodeReleasesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAEF36230560A40098DCA9 /* XcodeReleasesEndpoint.swift */; };
+		89FAEF3A2305626E0098DCA9 /* TinyNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 89FAEF392305626E0098DCA9 /* TinyNetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		89FAEF2B23055E9D0098DCA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89FAEF2E23055E9D0098DCA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89FAEF3023055E9D0098DCA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89FAEF36230560A40098DCA9 /* XcodeReleasesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeReleasesEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FAEF3A2305626E0098DCA9 /* TinyNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				89FAEF2D23055E9D0098DCA9 /* LaunchScreen.storyboard */,
 				89FAEF3023055E9D0098DCA9 /* Info.plist */,
 				89FAEF2A23055E9D0098DCA9 /* Preview Content */,
+				89FAEF36230560A40098DCA9 /* XcodeReleasesEndpoint.swift */,
 			);
 			path = XcodeReleases;
 			sourceTree = "<group>";
@@ -91,6 +96,9 @@
 			dependencies = (
 			);
 			name = XcodeReleases;
+			packageProductDependencies = (
+				89FAEF392305626E0098DCA9 /* TinyNetworking */,
+			);
 			productName = XcodeReleases;
 			productReference = 89FAEF1F23055E9B0098DCA9 /* XcodeReleases.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 89FAEF1623055E9B0098DCA9;
+			packageReferences = (
+				89FAEF382305626D0098DCA9 /* XCRemoteSwiftPackageReference "tiny-networking" */,
+			);
 			productRefGroup = 89FAEF2023055E9B0098DCA9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,6 +159,7 @@
 			files = (
 				89FAEF2323055E9B0098DCA9 /* AppDelegate.swift in Sources */,
 				89FAEF2523055E9B0098DCA9 /* SceneDelegate.swift in Sources */,
+				89FAEF37230560A40098DCA9 /* XcodeReleasesEndpoint.swift in Sources */,
 				89FAEF2723055E9B0098DCA9 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89FAEF382305626D0098DCA9 /* XCRemoteSwiftPackageReference "tiny-networking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/objcio/tiny-networking";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89FAEF392305626E0098DCA9 /* TinyNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89FAEF382305626D0098DCA9 /* XCRemoteSwiftPackageReference "tiny-networking" */;
+			productName = TinyNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89FAEF1723055E9B0098DCA9 /* Project object */;
 }
