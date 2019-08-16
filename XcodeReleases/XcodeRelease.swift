@@ -1,5 +1,5 @@
 //
-//  XcodeReleaseEntity.swift
+//  XcodeRelease.swift
 //  XcodeReleases
 //
 //  Created by bartvk on 16/08/2019.
@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Compilers: Codable {
     let clang: [CompilerVersion]
@@ -19,7 +20,10 @@ struct CompilerVersion: Codable {
     let release: Release
 }
 
-struct XcodeRelease: Codable {
+struct XcodeRelease: Codable, Identifiable {
+    var id: UUID {
+        return UUID()  // TODO replace this by parsing version in the JSON, and return that
+    }
     let name: String
     let requires: String
     let compilers: Compilers
