@@ -9,10 +9,13 @@
 import Foundation
 import TinyNetworking
 
-struct XcodeRelease: Codable {
-    let name: String
-}
+typealias XcodeReleases = Array<XcodeRelease>
 
-func xcodeReleases() -> Endpoint<Array<XcodeRelease>> {
-    return Endpoint(json: .get, url: URL(string: "https://xcodereleases.com/data.json")!)
+func xcodeReleases() -> Endpoint<XcodeReleases> {
+    guard let remoteURL = URL(string: "https://xcodereleases.com/data.json") else {
+        fatalError("Error in URL")
+    }
+    
+    let endpoint = Endpoint<XcodeReleases>(json: .get, url: remoteURL)
+    return endpoint
 }

@@ -1,0 +1,822 @@
+[
+  {
+    "compilers": {
+      "clang": [
+        {
+          "number": "11.0.0",
+          "build": "1100.0.32.5",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "swift": [
+        {
+          "number": "5.1",
+          "build": "1100.0.266.1",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "requires": "10.14.4",
+    "date": {
+      "year": 2019,
+      "month": 7,
+      "day": 29
+    },
+    "links": {
+      "notes": {
+        "url": "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_5_release_notes"
+      },
+      "download": {
+        "url": "https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_5/Xcode_11_Beta_5.xip"
+      }
+    },
+    "version": {
+      "number": "11.0",
+      "build": "11M382q",
+      "release": {
+        "beta": 5
+      }
+    },
+    "sdks": {
+      "macOS": [
+        {
+          "number": "10.15",
+          "build": "19A526e",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "tvOS": [
+        {
+          "number": "13.0",
+          "build": "17J5540d",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "iOS": [
+        {
+          "number": "13.0",
+          "build": "17A5547d",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "watchOS": [
+        {
+          "number": "6.0",
+          "build": "17R5546d",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "name": "Xcode"
+  },
+  {
+    "compilers": {
+      "clang": [
+        {
+          "number": "11.0.0",
+          "build": "1100.0.31.5",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "swift": [
+        {
+          "number": "5.1",
+          "build": "1100.0.257.2",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "requires": "10.14.4",
+    "date": {
+      "year": 2019,
+      "month": 7,
+      "day": 17
+    },
+    "links": {
+      "notes": {
+        "url": "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_4_release_notes"
+      },
+      "download": {
+        "url": "https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_4/Xcode_11_Beta_4.xip"
+      }
+    },
+    "version": {
+      "number": "11.0",
+      "build": "11M374r",
+      "release": {
+        "beta": 4
+      }
+    },
+    "sdks": {
+      "macOS": [
+        {
+          "number": "10.15",
+          "build": "19A512e",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "tvOS": [
+        {
+          "number": "13.0",
+          "build": "17J5526d",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "iOS": [
+        {
+          "number": "13.0",
+          "build": "17A5534d",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "watchOS": [
+        {
+          "number": "6.0",
+          "build": "17R5532d",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "name": "Xcode"
+  },
+  {
+    "compilers": {
+      "clang": [
+        {
+          "number": "11.0.0",
+          "build": "1100.0.28.3",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "swift": [
+        {
+          "number": "5.1",
+          "build": "1100.0.212.5",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "requires": "10.14.4",
+    "date": {
+      "year": 2019,
+      "month": 7,
+      "day": 2
+    },
+    "links": {
+      "notes": {
+        "url": "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_3_release_notes"
+      },
+      "download": {
+        "url": "https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_3/Xcode_11_Beta_3.xip"
+      }
+    },
+    "version": {
+      "number": "11.0",
+      "build": "11M362v",
+      "release": {
+        "beta": 3
+      }
+    },
+    "sdks": {
+      "macOS": [
+        {
+          "number": "10.15",
+          "build": "19A501g",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "tvOS": [
+        {
+          "number": "13.0",
+          "build": "17J5515e",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "iOS": [
+        {
+          "number": "13.0",
+          "build": "17A5522e",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "watchOS": [
+        {
+          "number": "6.0",
+          "build": "17R5521e",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "name": "Xcode"
+  },
+  {
+    "compilers": {
+      "clang": [
+        {
+          "number": "11.0.0",
+          "build": "1100.0.20.17",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "swift": [
+        {
+          "number": "5.1",
+          "build": "1100.0.43.3",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "requires": "10.14.4",
+    "date": {
+      "year": 2019,
+      "month": 6,
+      "day": 17
+    },
+    "links": {
+      "notes": {
+        "url": "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_2_release_notes"
+      },
+      "download": {
+        "url": "https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_2/Xcode_11_Beta_2.xip"
+      }
+    },
+    "version": {
+      "number": "11.0",
+      "build": "11M337n",
+      "release": {
+        "beta": 2
+      }
+    },
+    "sdks": {
+      "macOS": [
+        {
+          "number": "10.15",
+          "build": "19A487k",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "tvOS": [
+        {
+          "number": "13.0",
+          "build": "17J5501l",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "iOS": [
+        {
+          "number": "13.0",
+          "build": "17A5508l",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "watchOS": [
+        {
+          "number": "6.0",
+          "build": "17R5507k",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "name": "Xcode"
+  },
+  {
+    "compilers": {
+      "clang": [
+        {
+          "number": "11.0.0",
+          "build": "1100.0.20.17",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "swift": [
+        {
+          "number": "5.1",
+          "build": "1100.0.38.29",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "requires": "10.14.4",
+    "date": {
+      "year": 2019,
+      "month": 6,
+      "day": 3
+    },
+    "links": {
+      "notes": {
+        "url": "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_release_notes"
+      },
+      "download": {
+        "url": "https://download.developer.apple.com/WWDC_2019/Xcode_11_Beta/Xcode_11_Beta.xip"
+      }
+    },
+    "version": {
+      "number": "11.0",
+      "build": "11M336w",
+      "release": {
+        "beta": 1
+      }
+    },
+    "sdks": {
+      "macOS": [
+        {
+          "number": "10.15",
+          "build": "19A471t",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "tvOS": [
+        {
+          "number": "13.0",
+          "build": "17J5485u",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "iOS": [
+        {
+          "number": "13.0",
+          "build": "17A5492t",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "watchOS": [
+        {
+          "number": "6.0",
+          "build": "17R5491t",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "name": "Xcode"
+  },
+  {
+    "compilers": {
+      "clang": [
+        {
+          "number": "10.0.1",
+          "build": "1001.0.46.4",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "swift": [
+        {
+          "number": "5.0.1",
+          "build": "1001.0.82.4",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "requires": "10.14.3",
+    "date": {
+      "year": 2019,
+      "month": 7,
+      "day": 22
+    },
+    "links": {
+      "notes": {
+        "url": "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_3_release_notes/"
+      },
+      "download": {
+        "url": "https://download.developer.apple.com/Developer_Tools/Xcode_10.3/Xcode_10.3.xip"
+      }
+    },
+    "version": {
+      "number": "10.3",
+      "build": "10G8",
+      "release": {
+        "gm": true
+      }
+    },
+    "sdks": {
+      "macOS": [
+        {
+          "number": "10.14.6",
+          "build": "18G74",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "tvOS": [
+        {
+          "number": "12.4",
+          "build": "16M567",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "iOS": [
+        {
+          "number": "12.4",
+          "build": "16G73",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "watchOS": [
+        {
+          "number": "5.3",
+          "build": "16U567",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "name": "Xcode"
+  },
+  {
+    "compilers": {
+      "clang": [
+        {
+          "number": "10.0.1",
+          "build": "1001.0.46.4",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "swift": [
+        {
+          "number": "5.0.1",
+          "build": "1001.0.82.4",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "requires": "10.14.3",
+    "date": {
+      "year": 2019,
+      "month": 4,
+      "day": 17
+    },
+    "links": {
+      "notes": {
+        "url": "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_2_1_release_notes/"
+      },
+      "download": {
+        "url": "https://download.developer.apple.com/Developer_Tools/Xcode_10.2.1/Xcode_10.2.1.xip"
+      }
+    },
+    "version": {
+      "number": "10.2.1",
+      "build": "10E1001",
+      "release": {
+        "gm": true
+      }
+    },
+    "sdks": {
+      "macOS": [
+        {
+          "number": "10.14.4",
+          "build": "18E219",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "tvOS": [
+        {
+          "number": "12.2",
+          "build": "16L225",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "iOS": [
+        {
+          "number": "12.2",
+          "build": "16E226",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "watchOS": [
+        {
+          "number": "5.2",
+          "build": "16T224",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "name": "Xcode"
+  },
+  {
+    "compilers": {
+      "clang": [
+        {
+          "number": "10.0.1",
+          "build": "1001.0.46.3",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "swift": [
+        {
+          "number": "5.0",
+          "build": "1001.0.69.5",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "requires": "10.14.3",
+    "date": {
+      "year": 2019,
+      "month": 3,
+      "day": 25
+    },
+    "links": {
+      "notes": {
+        "url": "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_2_release_notes"
+      },
+      "download": {
+        "url": "https://download.developer.apple.com/Developer_Tools/Xcode_10.2/Xcode_10.2.xip"
+      }
+    },
+    "version": {
+      "number": "10.2",
+      "build": "10E125",
+      "release": {
+        "gm": true
+      }
+    },
+    "sdks": {
+      "macOS": [
+        {
+          "number": "10.14.4",
+          "build": "18E219",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "tvOS": [
+        {
+          "number": "12.2",
+          "build": "16L225",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "iOS": [
+        {
+          "number": "12.2",
+          "build": "16E226",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "watchOS": [
+        {
+          "number": "5.2",
+          "build": "16T224",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "name": "Xcode"
+  },
+  {
+    "compilers": {
+      "clang": [
+        {
+          "number": "10.0.1",
+          "build": "1001.0.46.2",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "swift": [
+        {
+          "number": "5.0",
+          "build": "1001.0.69",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "requires": "10.14.3",
+    "date": {
+      "year": 2019,
+      "month": 3,
+      "day": 4
+    },
+    "links": {
+      "notes": {
+        "url": "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_2_beta_4_release_notes"
+      },
+      "download": {
+        "url": "https://download.developer.apple.com/Developer_Tools/Xcode_10.2_beta_4/Xcode_10.2_beta_4.xip"
+      }
+    },
+    "version": {
+      "number": "10.2",
+      "build": "10P107d",
+      "release": {
+        "beta": 4
+      }
+    },
+    "sdks": {
+      "macOS": [
+        {
+          "number": "10.14.4",
+          "build": "18E205d",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "tvOS": [
+        {
+          "number": "12.2",
+          "build": "16L5212d",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "iOS": [
+        {
+          "number": "12.2",
+          "build": "16E5212e",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "watchOS": [
+        {
+          "number": "5.2",
+          "build": "16T5212d",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "name": "Xcode"
+  },
+  {
+    "compilers": {
+      "clang": [
+        {
+          "number": "10.0.1",
+          "build": "1001.0.43.3",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "swift": [
+        {
+          "number": "5.0",
+          "build": "1001.0.63.8",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "requires": "10.14",
+    "date": {
+      "year": 2019,
+      "month": 2,
+      "day": 19
+    },
+    "links": {
+      "notes": {
+        "url": "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_2_beta_3_release_notes"
+      },
+      "download": {
+        "url": "https://download.developer.apple.com/Developer_Tools/Xcode_10.2_Beta_3/Xcode_10.2_Beta_3.xip"
+      }
+    },
+    "version": {
+      "number": "10.2",
+      "build": "10P99q",
+      "release": {
+        "beta": 3
+      }
+    },
+    "sdks": {
+      "macOS": [
+        {
+          "number": "10.14.4",
+          "build": "18E194d",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "tvOS": [
+        {
+          "number": "12.2",
+          "build": "16L5201d",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "iOS": [
+        {
+          "number": "12.2",
+          "build": "16E5201d",
+          "release": {
+            "gm": true
+          }
+        }
+      ],
+      "watchOS": [
+        {
+          "number": "5.2",
+          "build": "16T5201c",
+          "release": {
+            "gm": true
+          }
+        }
+      ]
+    },
+    "name": "Xcode"
+  }
+]
