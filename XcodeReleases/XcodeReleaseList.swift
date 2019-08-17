@@ -11,11 +11,20 @@ import SwiftUI
 struct XcodeReleaseList: View {
     @ObservedObject var caller = XcodeReleasesCaller()
     var body: some View {
-        List(caller.result) { xcodeRelease in
-            Text(xcodeRelease.name)
-//        }.onAppear {
-            // This causes a fatal error somehow
-//            self.caller.call()
+        NavigationView {
+            List(caller.result) { xcodeRelease in
+                XcodeReleaseRow(xcodeRelease: xcodeRelease)
+            }.onAppear {
+                // This causes a fatal error somehow
+                //self.caller.call()
+            }
+            .navigationBarTitle(Text("Releases"), displayMode: .large)
+        .navigationBarItems(trailing:
+            Button(action: {
+                self.caller.call()
+            }) {
+                Text("Load")
+            })
         }
     }
 }

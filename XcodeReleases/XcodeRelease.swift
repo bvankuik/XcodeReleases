@@ -10,21 +10,16 @@ import Foundation
 import SwiftUI
 
 struct Compilers: Codable {
-    let clang: [CompilerVersion]
-    let swift: [CompilerVersion]
-}
-
-struct CompilerVersion: Codable {
-    let number: String
-    let build: String
-    let release: Release
+    let clang: [Version]
+    let swift: [Version]
 }
 
 struct XcodeRelease: Codable, Identifiable {
-    var id: UUID {
-        return UUID()  // TODO replace this by parsing version in the JSON, and return that
+    var id: String {
+        return version.id
     }
     let name: String
+    let version: Version
     let requires: String
     let compilers: Compilers
     let date: ReleaseDateComponents
@@ -40,7 +35,10 @@ struct URLParent: Codable {
     let url: String
 }
 
-struct Version: Codable {
+struct Version: Codable, Identifiable {
+    var id: String {
+        return "v\(self.number)b\(self.build)"
+    }
     let number: String
     let build: String
     let release: Release
