@@ -12,6 +12,7 @@ struct XcodeReleaseRow: View {
     var xcodeRelease: XcodeRelease
     var body: some View {
         VStack(alignment: .leading) {
+            
             Text("\(xcodeRelease.name) \(xcodeRelease.version.number)").fontWeight(.bold)
             Text("Build \(xcodeRelease.version.build)").font(.footnote).lineLimit(1)
         }.padding(.all, 8)

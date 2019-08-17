@@ -24,6 +24,14 @@ struct XcodeRelease: Codable, Identifiable {
     let compilers: Compilers
     let date: ReleaseDateComponents
     let links: Links
+    var nsDate: Date? {
+        var components = DateComponents()
+        components.day = self.date.day
+        components.month = self.date.month
+        components.year = self.date.year
+        let nsDate = Calendar.current.date(from: components)
+        return nsDate
+    }
 }
 
 struct Links: Codable {
@@ -44,9 +52,22 @@ struct Version: Codable, Identifiable {
     let release: Release
 }
 
-struct Release: Codable {
+struct Release: Codable, CustomStringConvertible {
+    var description: String {
+        if let beta = self.beta {
+            return "Beta \(beta)"
+        } else if let gm = self.gm, gm == true {
+            return "GM"
+        } else if let gmSeed = self.gmSeed {
+            return "GM Seed \(gmSeed)"
+        } else {
+            return "(Unknown)"
+        }
+    }
+    
     let beta: Int?
     let gm: Bool?
+    let gmSeed: Int?
 }
 
 struct ReleaseDateComponents: Codable {

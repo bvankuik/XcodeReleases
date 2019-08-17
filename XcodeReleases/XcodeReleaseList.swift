@@ -13,7 +13,9 @@ struct XcodeReleaseList: View {
     var body: some View {
         NavigationView {
             List(caller.result) { xcodeRelease in
-                XcodeReleaseRow(xcodeRelease: xcodeRelease)
+                NavigationLink(destination: XcodeReleaseDetails(xcodeRelease: xcodeRelease)) {
+                    XcodeReleaseRow(xcodeRelease: xcodeRelease)
+                }
             }.onAppear {
                 // This causes a fatal error somehow
                 //self.caller.call()
