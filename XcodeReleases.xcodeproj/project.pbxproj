@@ -16,10 +16,11 @@
 		89FAEF37230560A40098DCA9 /* XcodeReleasesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAEF36230560A40098DCA9 /* XcodeReleasesEndpoint.swift */; };
 		89FAEF3A2305626E0098DCA9 /* TinyNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 89FAEF392305626E0098DCA9 /* TinyNetworking */; };
 		89FAEF3C2306AFDF0098DCA9 /* XcodeRelease.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAEF3B2306AFDF0098DCA9 /* XcodeRelease.swift */; };
-		89FAEF402306B91A0098DCA9 /* localtestdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 89FAEF3F2306B91A0098DCA9 /* localtestdata.json */; };
 		89FAEF42230731220098DCA9 /* XcodeReleaseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAEF41230731220098DCA9 /* XcodeReleaseList.swift */; };
 		89FAEF44230733AF0098DCA9 /* XcodeReleasesCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAEF43230733AF0098DCA9 /* XcodeReleasesCaller.swift */; };
 		89FAEF4623084B030098DCA9 /* XcodeReleaseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAEF4523084B030098DCA9 /* XcodeReleaseRow.swift */; };
+		89FAEF48230873120098DCA9 /* XcodeReleaseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAEF47230873120098DCA9 /* XcodeReleaseDetails.swift */; };
+		89FAEF4A23088CA10098DCA9 /* localdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 89FAEF4923088CA10098DCA9 /* localdata.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +34,11 @@
 		89FAEF3023055E9D0098DCA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89FAEF36230560A40098DCA9 /* XcodeReleasesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeReleasesEndpoint.swift; sourceTree = "<group>"; };
 		89FAEF3B2306AFDF0098DCA9 /* XcodeRelease.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeRelease.swift; sourceTree = "<group>"; };
-		89FAEF3F2306B91A0098DCA9 /* localtestdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = localtestdata.json; sourceTree = "<group>"; };
 		89FAEF41230731220098DCA9 /* XcodeReleaseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeReleaseList.swift; sourceTree = "<group>"; };
 		89FAEF43230733AF0098DCA9 /* XcodeReleasesCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeReleasesCaller.swift; sourceTree = "<group>"; };
 		89FAEF4523084B030098DCA9 /* XcodeReleaseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeReleaseRow.swift; sourceTree = "<group>"; };
+		89FAEF47230873120098DCA9 /* XcodeReleaseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeReleaseDetails.swift; sourceTree = "<group>"; };
+		89FAEF4923088CA10098DCA9 /* localdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = localdata.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,7 @@
 		89FAEF2123055E9B0098DCA9 /* XcodeReleases */ = {
 			isa = PBXGroup;
 			children = (
-				89FAEF3F2306B91A0098DCA9 /* localtestdata.json */,
+				89FAEF4923088CA10098DCA9 /* localdata.json */,
 				89FAEF2223055E9B0098DCA9 /* AppDelegate.swift */,
 				89FAEF2423055E9B0098DCA9 /* SceneDelegate.swift */,
 				89FAEF2623055E9B0098DCA9 /* ContentView.swift */,
@@ -83,6 +85,7 @@
 				89FAEF3B2306AFDF0098DCA9 /* XcodeRelease.swift */,
 				89FAEF41230731220098DCA9 /* XcodeReleaseList.swift */,
 				89FAEF4523084B030098DCA9 /* XcodeReleaseRow.swift */,
+				89FAEF47230873120098DCA9 /* XcodeReleaseDetails.swift */,
 			);
 			path = XcodeReleases;
 			sourceTree = "<group>";
@@ -162,7 +165,7 @@
 				89FAEF2F23055E9D0098DCA9 /* LaunchScreen.storyboard in Resources */,
 				89FAEF2C23055E9D0098DCA9 /* Preview Assets.xcassets in Resources */,
 				89FAEF2923055E9D0098DCA9 /* Assets.xcassets in Resources */,
-				89FAEF402306B91A0098DCA9 /* localtestdata.json in Resources */,
+				89FAEF4A23088CA10098DCA9 /* localdata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +180,7 @@
 				89FAEF2323055E9B0098DCA9 /* AppDelegate.swift in Sources */,
 				89FAEF44230733AF0098DCA9 /* XcodeReleasesCaller.swift in Sources */,
 				89FAEF2523055E9B0098DCA9 /* SceneDelegate.swift in Sources */,
+				89FAEF48230873120098DCA9 /* XcodeReleaseDetails.swift in Sources */,
 				89FAEF4623084B030098DCA9 /* XcodeReleaseRow.swift in Sources */,
 				89FAEF37230560A40098DCA9 /* XcodeReleasesEndpoint.swift in Sources */,
 				89FAEF2723055E9B0098DCA9 /* ContentView.swift in Sources */,

@@ -24,7 +24,7 @@ struct XcodeReleaseDetails: View {
             HStack {
                 Text("Version").fontWeight(.bold)
                 Spacer()
-                Text(xcodeRelease.version.number).frame(alignment: .trailing)
+                Text(xcodeRelease.version.number ?? "").frame(alignment: .trailing)
             }
             HStack {
                 Text("Release").fontWeight(.bold)
@@ -47,14 +47,23 @@ struct XcodeReleaseDetails: View {
                 Text(xcodeRelease.requires)
             }
             HStack {
+                Text("macOS SDKs").fontWeight(.bold)
+                Spacer()
+                VStack {
+                    ForEach(xcodeRelease.sdks?.macOS ?? []) { version in
+                        Text(version.build)
+                    }
+                }
+            }
+            HStack {
                 Text("Download").fontWeight(.bold)
                 Spacer()
-                Text(xcodeRelease.links.download.url).lineLimit(0)
+                Text(xcodeRelease.links?.download?.url ?? "").lineLimit(0)
             }
             HStack {
                 Text("Release Notes").fontWeight(.bold)
                 Spacer()
-                Text(xcodeRelease.links.notes.url).lineLimit(0)
+                Text(xcodeRelease.links?.notes?.url ?? "").lineLimit(0)
             }
         }
         .navigationBarTitle(Text("Release Details"), displayMode: .large)

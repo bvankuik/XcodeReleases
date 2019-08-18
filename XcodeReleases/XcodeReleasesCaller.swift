@@ -22,7 +22,7 @@ class XcodeReleasesCaller: ObservableObject {
     }
     
     private func localCall() {
-        guard let localURL = Bundle.main.resourceURL?.appendingPathComponent("localtestdata.json") else {
+        guard let localURL = Bundle.main.resourceURL?.appendingPathComponent("localdata.json") else {
             fatalError("Error in local URL")
         }
         
@@ -49,8 +49,10 @@ class XcodeReleasesCaller: ObservableObject {
         self.task = URLSession.shared.load(endpoint) { localResult in
             switch localResult {
             case .success(let releases):
-                if releases.first != nil {
+                if !releases.isEmpty {
                     self.result = releases
+                } else {
+                    fatalError("Call was successful but no data was parsed")
                 }
             case .failure(let error):
                 self.error = error

@@ -10,8 +10,11 @@ import Foundation
 import SwiftUI
 
 struct Compilers: Codable {
-    let clang: [Version]
-    let swift: [Version]
+    let clang: [Version]?
+    let swift: [Version]?
+    let llvm: [Version]?
+    let llvm_gcc: [Version]?
+    let gcc: [Version]?
 }
 
 struct XcodeRelease: Codable, Identifiable {
@@ -21,9 +24,10 @@ struct XcodeRelease: Codable, Identifiable {
     let name: String
     let version: Version
     let requires: String
-    let compilers: Compilers
+    let compilers: Compilers?
     let date: ReleaseDateComponents
-    let links: Links
+    let links: Links?
+    let sdks: SDKs?
     var nsDate: Date? {
         var components = DateComponents()
         components.day = self.date.day
@@ -35,8 +39,8 @@ struct XcodeRelease: Codable, Identifiable {
 }
 
 struct Links: Codable {
-    let notes: URLParent
-    let download: URLParent
+    let download: URLParent?
+    let notes: URLParent?
 }
 
 struct URLParent: Codable {
@@ -45,9 +49,13 @@ struct URLParent: Codable {
 
 struct Version: Codable, Identifiable {
     var id: String {
-        return "v\(self.number)b\(self.build)"
+        if let number = self.number {
+            return "v\(number)b\(self.build)"
+        } else {
+            return "b\(self.build)"
+        }
     }
-    let number: String
+    let number: String?
     let build: String
     let release: Release
 }
@@ -76,15 +84,9 @@ struct ReleaseDateComponents: Codable {
     let year: Int
 }
 
-struct SDK: Codable {
-    let macOS: [SDKVersion]
-    let tvOS: [SDKVersion]
-    let iOS: [SDKVersion]
-    let watchOS: [SDKVersion]
-}
-
-struct SDKVersion: Codable {
-    let number: String
-    let build: String
-    let release: Release
+struct SDKs: Codable {
+    let macOS: [Version]?
+    let tvOS: [Version]?
+    let iOS: [Version]?
+    let watchOS: [Version]?
 }
